@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "788524645419",
+    "project_id": "v-i-v-org",
+    "storage_bucket": "v-i-v-org.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788524645419:android:2f6f98b807603a7f96be6e",
+        "android_client_info": {
+          "package_name": "com.vivsorg.viv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788524645419-0p6f93fn5660m5msp11tjc33145ukv33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIbtl5CnIQfM1LDdz0wf53Iq_ENa44EvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788524645419-0p6f93fn5660m5msp11tjc33145ukv33.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "788524645419-2b1c7ss52pmipdfro8ituoklq7vf7dsn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vivs.org.viv.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

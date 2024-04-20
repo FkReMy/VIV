@@ -1,0 +1,195 @@
+@font-face {
+  font-family: robotoslab;
+  src: url(../src/assets/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+// Override default variables before the import
+.navbar {
+  align-items: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+}
+.navbar a {
+  text-decoration: none;
+  color: #010101;
+}
+.navbar a:hover {
+  color: #cfb53b;
+}
+
+
+.homeNavlogo {
+  text-decoration: none ;
+  color: #010101 !important;
+  font-family: robotoslab, serif !important;
+  text-decoration: none;
+  font-size: 2.5em !important;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+  background-color: #fff !important;
+  border: none !important;
+  cursor: pointer;
+}
+.homeNavlogo:hover {
+  color: #cfb53b !important;
+}
+.homeNavbtn {
+  text-decoration: none;
+  color: #010101 !important;
+  font-family: robotoslab, serif !important;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.5em !important;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+  background-color: #fff !important;
+  border: none !important;
+  outline: none !important;
+  height: inherit !important;
+  width: inherit !important;
+  cursor: pointer;
+}
+.homeNavbtn:hover {
+  color: #cfb53b !important;
+}
+
+
+.logobtn {
+  font-size: 1.7em;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+}
+
+.searchBox {
+  flex: 1 1;
+  margin-left: 40px;
+  position: relative;
+}
+.navSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid #000;
+  border-radius: 25px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navSearch .fa-solid {
+  font-size: 1.3em;
+}
+
+.navSearch input {
+  border: none;
+  outline: none;
+  font-size: 1.3em;
+  margin-right: 10px;
+  flex: 1 0 auto;
+}
+
+.none {
+  display: none !important;
+}
+.nav .fa-solid {
+  font-size: 1.4em;
+}
+.navSearch .fa-solid {
+  font-size: 1.3em;
+}
+.searchResultsContainer {
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 70px;
+  right: 0;
+  border-radius: 8px;
+  height: auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 1px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.233);
+  max-height: 300px;
+  overflow-y: auto;
+}
+.searchResultsContainer .loading {
+  text-align: center;
+}
+.searchResultsContainer .loading {
+  border-color: #000;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav_profile {
+  font-size: 1.3em;
+}
+
+.account_image {
+  display: flex;
+  align-items: center;
+}
+.account_image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin-right: 20px;
+  border: 4px solid #242424;
+}
+
+.account_image h2 {
+  font-size: 1.6em;
+}
+.nav .account_image img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+}
+
+.nav_profile {
+  font-size: 1.3em;
+}
+.menu-btn {
+  display: block;
+  font-family: robotoslab, serif !important;
+  color: #fff !important;
+  background-color: #000;
+  font-size: 1.6em;
+}
+
+.menu-btn:hover {
+  background-color: #cfb53b;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.px750-visible {
+  display: none;
+}
+
+// Required
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+// Optional Bootstrap components here
+@import "../../../../node_modules/bootstrap/scss/reboot";
+@import "../../../../node_modules/bootstrap/scss/type";
+// etc

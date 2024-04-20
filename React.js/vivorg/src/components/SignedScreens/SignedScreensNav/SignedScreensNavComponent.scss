@@ -1,0 +1,84 @@
+@font-face {
+  font-family: robotoslab;
+  src: url(../src/assets/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+
+.SignedScreensNavbar {
+
+  align-items: center;
+    background-color: #010101 !important;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+}
+.SignedScreensNavlogo {
+  text-decoration: none ;
+  color: #fff !important;
+  font-family: robotoslab, serif !important;
+  text-decoration: none;
+  font-size: 2.5em !important;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+  background-color: #010101 !important;
+  border: none !important;
+  cursor: pointer;
+}
+.SignedScreensNavlogo:hover {
+  color: #cfb53b !important;
+}
+.SignedScreensNavbtn {
+  text-decoration: none;
+  color: #fff !important;
+  font-family: robotoslab, serif !important;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.5em !important;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+  background-color: #010101 !important;
+  border: none !important;
+  height: inherit !important;
+  width: inherit !important;
+  cursor: pointer;
+}
+.SignedScreensNavbtn:hover {
+  color: #cfb53b !important;
+}
+.offSignedScreensNavbtn {
+  text-decoration: none;
+  color: #010101 !important;
+  font-family: robotoslab, serif !important;
+  text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.5em !important;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+  background-color: #fff !important;
+  border: none !important;
+  height: inherit !important;
+  width: inherit !important;
+  cursor: pointer;
+}
+.offSignedScreensNavbtn:hover {
+  color: #cfb53b !important;
+}
+.SignedScreensNavbaricons{
+  color:#fff;
+}
+.SignedScreensNavbaricons:hover {
+  color: #cfb53b !important;
+}
+
+// Required
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+// Optional Bootstrap components here
+@import "../../../../node_modules/bootstrap/scss/reboot";
+@import "../../../../node_modules/bootstrap/scss/type";
+// etc

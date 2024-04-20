@@ -1,0 +1,95 @@
+@font-face {
+    font-family: robotoslab;
+    src: url(../src/assets/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+  @import "../../../../../node_modules/bootstrap/scss/functions";
+  @import "../../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+  
+.FeedCreatePost-Main{
+  font-family: robotoslab, serif !important;
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    margin-top: 30px;
+}
+
+.FeedCreatePost-Create {
+  font-family: robotoslab, serif !important;
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+   height: 20% !important;
+   width: 80% !important;
+   padding: 5% 5% !important;
+   background-color: #f6f6f6 !important;
+   border-color : #010101 !important;
+   border-radius: 5px solid !important;
+
+}
+.OpenPostModal{
+  font-family: robotoslab, serif !important;
+    font-weight: 600 !important;
+    background-color: #f6f6f6 !important;
+    color :#010101 !important;
+    border-radius: 30px !important;
+    font-size: 1.2em !important;
+    padding: 15px !important;
+    box-shadow: none  !important;
+    width: 80% !important;
+    height: 20% !important;
+    text-align: left !important;
+    border: 1px solid !important;
+    cursor: pointer;
+}
+.OpenPostModal:hover{
+    color : white !important;
+    border: white !important;
+    background-color: #a8a8a8 !important;
+}
+.PostModal-input {
+  font-family: robotoslab, serif !important;
+    font-weight: 500 !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 1.2em !important;
+    margin-bottom: 25px !important;
+    padding: 5% !important;
+    box-shadow: none  !important;
+  }
+
+  .PostModalbtn {
+
+    font-family: robotoslab, serif !important;
+    font-weight: 500 !important;
+    color: #fcfcfa !important;
+    height: inherit  !important;
+    width: inherit !important;
+    background-color: #cfb53b !important;
+    border-color: #cfb53b !important;
+    font-size: 1.2em !important;
+    border-radius: 5px !important;
+    text-decoration: none !important;
+    border: none !important;
+    padding : 1% 3% !important;
+    cursor: pointer !important;
+  }
+  
+  .PostModalbtn:hover {
+    background-color: #000 !important;
+    color: #cfb53b !important;
+  }
+  
+  
+
+
+// Required
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+
+// Optional Bootstrap components here
+@import "../../../../../node_modules/bootstrap/scss/reboot";
+@import "../../../../../node_modules/bootstrap/scss/type";
+// etc

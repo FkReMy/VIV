@@ -1,0 +1,65 @@
+@font-face {
+    font-family: robotoslab;
+    src: url(../src/assets/Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+  @import "../../../../../node_modules/bootstrap/scss/functions";
+  @import "../../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+
+  
+.FeedPosts-Main{
+  font-family: robotoslab, serif !important;
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    height: inherit !important;
+}
+
+.FeedPosts-render {
+  font-family: robotoslab, serif !important;
+  box-sizing: border-box !important;
+  margin-top: 30px !important;
+  align-items: left !important;
+  display: flex !important;
+  justify-content: center !important;
+  height: inherit !important;
+  width: 80% !important;
+  padding: 5% 5% !important;
+  background-color: #f6f6f6 !important;
+  border-color : #010101 !important;
+  border-radius: 5px solid !important;
+  font-size: 14px !important;
+  color: #010101 !important;
+
+}
+.posttimeStamp{
+  font-family: robotoslab, serif !important;
+  font-weight: 400 !important;
+    font-size: 12px !important;
+  color: #010101 !important;
+  text-align: left !important;
+}
+.poststatus{
+  font-family: robotoslab, serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #010101 !important;
+  text-align: left !important;
+}
+.postusername{
+  font-family: robotoslab, serif !important;
+  font-weight: 600 !important;
+    font-size: 14px !important;
+  color: #010101 !important;
+  text-align: left !important;
+}
+
+// Required
+@import "../../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../../node_modules/bootstrap/scss/mixins";
+
+// Optional Bootstrap components here
+@import "../../../../../node_modules/bootstrap/scss/reboot";
+@import "../../../../../node_modules/bootstrap/scss/type";
+// etc
