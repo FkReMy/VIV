@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import "./FeedCreatePostComponent.scss";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
@@ -12,9 +12,9 @@ import { getUniqueID } from '../../../../helpers/getUniqueID';
 
 export default function FeedCreatePostComponent() {
   const [currentUser , serCurrentUser] = useState ([]);
-  useMemo (() => {
+  useEffect (() => {
       getCurrentUser(serCurrentUser);
-  });
+  }, []);
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import "./HomeNavComponent.scss"
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';

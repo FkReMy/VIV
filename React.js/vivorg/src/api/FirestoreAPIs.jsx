@@ -1,60 +1,47 @@
-import { firestore } from "../firebaseConfig"
-import { addDoc, collection, onSnapshot, doc, updateDoc} from "firebase/firestore"
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable no-unused-vars */
+// TODO: Replace with Azure Cosmos DB or Azure SQL Database
+// Placeholder implementations for Azure migration
+
 import { toast } from "react-toastify";
 
-let userRef = collection(firestore, "users");
-let postsRef = collection(firestore, "posts");
-
-
 export const PostStatus = (object) => {
-
-    addDoc(postsRef, object)
-    .then(() => {
-        toast.success("Posted successfully");
-    })
-    .catch((err) => {
-        console.log(err);
-    })
+    // TODO: Implement Azure database post creation
+    console.warn('PostStatus: Azure database not yet implemented');
+    toast.error("Database service not configured");
+    return Promise.reject(new Error('Database service not configured'));
 };
 
 export const getStatus = (setAllStatuses) => {
-    onSnapshot(postsRef, (response) => {
-        setAllStatuses(response.docs.map((docs) => {
-            return{ ...docs.data(), id: docs.id };
-        }))
-    } )
+    // TODO: Implement Azure database query for posts
+    console.warn('getStatus: Azure database not yet implemented');
+    setAllStatuses([]);
 };
 
 export const postUserData = (object) => {
-  addDoc(userRef, object)
-    .then(() => {})
-    .catch((err) => {
-      console.log(err);
-    });
+    // TODO: Implement Azure database user creation
+    console.warn('postUserData: Azure database not yet implemented');
+    return Promise.reject(new Error('Database service not configured'));
 };
 
 export const getCurrentUser = (setCurrentUser) => {
-  onSnapshot(userRef, (response) => {
-    setCurrentUser(
-      response.docs
-        .map((docs) => {
-          return { ...docs.data(), id: docs.id };
-        })
-        .filter((item) => {
-          return item.email === localStorage.getItem("userEmail");
-        })[0]
-    );
-  });
+    // TODO: Implement Azure database user query
+    console.warn('getCurrentUser: Azure database not yet implemented');
+    const userEmail = localStorage.getItem("userEmail");
+    if (userEmail) {
+        setCurrentUser({
+            email: userEmail,
+            name: 'User',
+            // Add other fields as needed
+        });
+    } else {
+        setCurrentUser({});
+    }
 };
 
 export const editProfile = (userID, payload) => {
-  let userToEdit = doc(userRef, userID);
-
-  updateDoc(userToEdit, payload)
-    .then(() => {
-      toast.success("Profile has been updated successfully");
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    // TODO: Implement Azure database user update
+    console.warn('editProfile: Azure database not yet implemented');
+    toast.error("Database service not configured");
+    return Promise.reject(new Error('Database service not configured'));
 };

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import "./SignedScreensNavComponent.scss"
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
@@ -11,7 +10,7 @@ import {
     AiOutlineMessage,
     AiOutlineSearch,
     AiOutlineBell
-} from 'react-icons/Ai';
+} from 'react-icons/ai';
 
 export default function SignedScreensNavComponent() {
     let navigate = useNavigate();

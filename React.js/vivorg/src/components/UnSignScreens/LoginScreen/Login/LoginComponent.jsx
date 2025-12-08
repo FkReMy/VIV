@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { LoginAPI, GoogleSignInAPI } from "../../../../api/AuthAPI";
+import { useState } from "react";
+import { LoginAPI } from "../../../../api/AuthAPI";
 import { toast } from "react-toastify";
-import GoogleButton from 'react-google-button'
 import { useNavigate } from "react-router-dom";
 import "./LoginComponent.scss";
 import Button from 'react-bootstrap/Button';

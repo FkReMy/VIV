@@ -1,9 +1,7 @@
-import React from "react";
 import HomeNav from "../HomeScreen/HomeNav/HomeNav";
 import Home from "../HomeScreen/Home/Home";
 import Homewave from "../HomeScreen/Homewave/Homewave";
 import HomeInfo from "./HomeInfo/HomeInfo";
-import { useNavigate } from "react-router-dom";
 import HomeHearMoreComponent from "./HomeHearMore/HomeHearMoreComponent";
 import HomeFeed from "./HomeFeed/HomeFeed";
 import HomeBoxes from "./HomeBoxes/HomeBoxes";
@@ -13,8 +11,6 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
 
 export default function HomeLayout() {
-
-    let navigate = useNavigate();
 
     return (
         <ThemeProvider

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { RegisterAPI, GoogleSignInAPI } from "../../../../api/AuthAPI";
+import { useState } from "react";
+import { RegisterAPI } from "../../../../api/AuthAPI";
 import { toast } from "react-toastify";
-import GoogleButton from 'react-google-button'
 import { useNavigate } from "react-router-dom";
 import "./RegisterComponent.scss";
 import Button from 'react-bootstrap/Button';

@@ -1,14 +1,12 @@
-import React, { useMemo, useState } from "react";
-import { getCurrentUser } from "../../../../api/FirestoreAPIs";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { GiCancel } from 'react-icons/gi';
-import { AiOutlineSave } from 'react-icons/Ai';
-import ProfileEdit from "../ProfileEdit/ProfileEdit";
-import { Navigate } from "react-router-dom";
+import { AiOutlineSave } from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
 import "./ProfileEditComponent.scss";
 import { editProfile } from "../../../../api/FirestoreAPIs";
