@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import { GiCancel } from 'react-icons/gi';
 import { AiOutlineSave } from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
-import "./ProfileEditcomponent.scss";
+import "./ProfileEditComponent.scss";
 import { editProfile } from "../../../../api/FirestoreAPIs";
 
 export default function ProfileEditComponent({ currentUser }) {
