@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import {
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
@@ -27,7 +28,7 @@ export const RegisterAPI = (email, password) => {
     }
 };
 
-export const GoogleSignInAPI = (email, password) => {
+export const GoogleSignInAPI = () => {
     try{
         let googleprovidr = new GoogleAuthProvider();
         let res = signInWithPopup(auth, googleprovidr);
@@ -40,7 +41,7 @@ export const GoogleSignInAPI = (email, password) => {
 
 export const onLogout = () => {
     try{
-        signOut(auth);
+        let res = signOut(auth);
         return res;
     }
     catch(err){

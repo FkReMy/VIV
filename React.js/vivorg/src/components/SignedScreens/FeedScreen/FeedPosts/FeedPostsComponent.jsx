@@ -1,4 +1,5 @@
-import React, { useMemo, useState } from "react";
+/* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
 import "./FeedPostsComponent.scss";
 import Card from "react-bootstrap/Card";
 import Row from 'react-bootstrap/Row';
@@ -7,10 +8,10 @@ import Container from "react-bootstrap/Container";
 import { getCurrentUser } from "../../../../api/FirestoreAPIs";
 
 export default function FeedPostsComponent({ posts }) {
-    const [currentUser , serCurrentUser] = useState ({});
-    useMemo (() => {
+    const [, serCurrentUser] = useState ({});
+    useEffect (() => {
         getCurrentUser(serCurrentUser);
-    })
+    }, [])
     return (
         <Container className="FeedPosts-Main">
             <Card className="FeedPosts-render">

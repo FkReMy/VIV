@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import FeedPostsComponent from "./FeedPostsComponent";
 import "./FeedPostsComponent.scss";
 import { getStatus } from '../../../../api/FirestoreAPIs';
@@ -6,7 +6,7 @@ import { getStatus } from '../../../../api/FirestoreAPIs';
 export default function FeedPosts() {
     const [allStatuses, setAllStatuses] = useState([]);
 
-    useMemo(() => {
+    useEffect(() => {
         getStatus(setAllStatuses)
     }, [])
     return (

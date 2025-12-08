@@ -1,11 +1,10 @@
-import React, { useMemo, useState }  from "react";
+/* eslint-disable react/prop-types */
 import ProfileCardComponent from "./ProfileCardComponent";
-import ProfileEdit from "../ProfileEdit/ProfileEdit";
 
 
 
 export default function ProfileCard ({currentUser}) {
 
 
-    return <ProfileCardComponent currentUser/>
+    return <ProfileCardComponent currentUser={currentUser}/>
 }

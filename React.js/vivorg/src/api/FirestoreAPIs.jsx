@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { firestore } from "../firebaseConfig"
 import { addDoc, collection, onSnapshot, doc, updateDoc} from "firebase/firestore"
 import { toast } from "react-toastify";
