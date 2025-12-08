@@ -1,50 +1,40 @@
 /* eslint-disable react-refresh/only-export-components */
-import {
-    signInWithEmailAndPassword,
-    createUserWithEmailAndPassword,
-    GoogleAuthProvider,
-    signInWithPopup,
-    signOut
-} from 'firebase/auth'
-import { auth } from '../firebaseConfig'; 
+/* eslint-disable no-unused-vars */
+// TODO: Replace with Azure AD B2C authentication
+// Placeholder implementations for Azure migration
 
-export const LoginAPI = (email, password) => {
-    try{
-        let response = signInWithEmailAndPassword(auth, email, password)
-        return response;
-    }
-    catch(err){
-        return err;
-    }
+export const LoginAPI = async (email, password) => {
+    // TODO: Implement Azure AD B2C login
+    console.warn('LoginAPI: Azure authentication not yet implemented');
+    throw new Error('Authentication service not configured');
 };
 
-export const RegisterAPI = (email, password) => {
-    try{
-        let response = createUserWithEmailAndPassword(auth, email, password)
-        return response;
-    }
-    catch(err){
-        return err;
-    }
+export const RegisterAPI = async (email, password) => {
+    // TODO: Implement Azure AD B2C registration
+    console.warn('RegisterAPI: Azure authentication not yet implemented');
+    throw new Error('Authentication service not configured');
 };
 
-export const GoogleSignInAPI = () => {
-    try{
-        let googleprovidr = new GoogleAuthProvider();
-        let res = signInWithPopup(auth, googleprovidr);
-        return res;
-    }
-    catch(err){
-        return err;
-    }
+export const GoogleSignInAPI = async () => {
+    // TODO: Implement Azure AD B2C social login (Google)
+    console.warn('GoogleSignInAPI: Azure authentication not yet implemented');
+    throw new Error('Authentication service not configured');
 };
 
-export const onLogout = () => {
-    try{
-        let res = signOut(auth);
-        return res;
-    }
-    catch(err){
-        return err;
+export const onLogout = async () => {
+    // TODO: Implement Azure AD B2C logout
+    console.warn('onLogout: Azure authentication not yet implemented');
+    localStorage.removeItem('userEmail');
+    return Promise.resolve();
+};
+
+export const onAuthStateChanged = (callback) => {
+    // TODO: Implement Azure AD B2C auth state monitoring
+    // For now, check localStorage
+    const userEmail = localStorage.getItem('userEmail');
+    if (userEmail) {
+        callback({ accessToken: 'placeholder' });
+    } else {
+        callback(null);
     }
 };
