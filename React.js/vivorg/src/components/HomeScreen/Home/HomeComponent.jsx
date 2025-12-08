@@ -1,4 +1,3 @@
-import React from "react";
 import vivbw from '../../../assets/Pics/vivbw.png';
 import "./HomeComponent.scss";
 import Image from 'react-bootstrap/Image';

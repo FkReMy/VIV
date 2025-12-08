@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";import ProfileEditComponent from "./ProfileEditComponent";
+import { useEffect, useState } from "react";
+import ProfileEditComponent from "./ProfileEditComponent";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../../../firebaseConfig";
@@ -13,9 +14,9 @@ export default function ProfileEdit ({currentUser}) {
                 navigate('/login');
             } else {
                 setLoading(false); 
-            };
+            }
         })
-    }, [])
+    }, [navigate])
     return  loading ? <Loader /> :  <ProfileEditComponent currentUser={currentUser}/>;
  
-};
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FeedComponent from "./FeedComponent";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
@@ -14,8 +14,8 @@ export default function Feed({currentUser}) {
                 navigate('/login');
             } else {
                 setLoading(false); 
-            };
+            }
         })
-    }, [])
+    }, [navigate])
     return  loading ? <Loader /> :  <FeedComponent currentUser={currentUser}/>;
-};
+}

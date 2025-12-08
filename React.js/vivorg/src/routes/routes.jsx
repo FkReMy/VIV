@@ -4,7 +4,6 @@ import {
 import FeedLayout from "../components/SignedScreens/FeedScreen/FeedLayout"
 import LoginLayout from "../components/UnSignScreens/LoginScreen/LoginLayout";
 import RegisterLayout from "../components/UnSignScreens/RegisterScreen/RegisterLayout";
-import UnderdevScreen from "../components/UnderdevScreen/UnderdevScreen";
 import HomeLayout from "../components/HomeScreen/HomeLayout";
 import ProfileLayout from "../components/SignedScreens/ProfileScreen/ProfileLayout";
 import ProfileEditLayout from "../components/SignedScreens/ProfileScreen/ProfileEditLayout";

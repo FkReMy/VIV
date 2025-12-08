@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import "./ProfileCardComponent.scss";
 import { getCurrentUser } from "../../../../api/FirestoreAPIs";
 import Card from "react-bootstrap/Card";
@@ -7,21 +7,19 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { AiOutlineEdit } from 'react-icons/Ai';
-import ProfileEdit from "../ProfileEdit/ProfileEdit";
-import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { getStatus } from '../../../../api/FirestoreAPIs';
 import FeedPostsComponent from "../../FeedScreen/FeedPosts/FeedPostsComponent";
 
 
-export default function ProfileCardComponent({ }) {
+export default function ProfileCardComponent() {
     let navigate = useNavigate();
     const [currentUser, setCurrentUser] = useState({});
-    useMemo(() => {
+    useEffect(() => {
         getCurrentUser(setCurrentUser);
-    })
+    }, [])
     const [allStatuses, setAllStatuses] = useState([]);
-    useMemo(() => {
+    useEffect(() => {
         getStatus(setAllStatuses)
     }, [])
 

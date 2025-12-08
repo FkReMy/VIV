@@ -1,14 +1,14 @@
-import React, { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import "./FeedComponent.scss";
 import FeedCreatePost from "../FeedCreatePost/FeedCreatePost";
 import FeedPosts from "../FeedPosts/FeedPosts";
 import { getCurrentUser } from "../../../../api/FirestoreAPIs";
 
-export default function FeedComponent({}) {
+export default function FeedComponent() {
     const [currentUser , serCurrentUser] = useState ({});
-    useMemo (() => {
+    useEffect (() => {
         getCurrentUser(serCurrentUser);
-    })
+    }, [])
     return (
             <div>
                 <div className="feed-details">

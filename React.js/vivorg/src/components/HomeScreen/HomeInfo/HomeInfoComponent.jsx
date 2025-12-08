@@ -1,6 +1,4 @@
-import React from 'react';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
-import Container from 'react-bootstrap/Container';
 
 export default function HomeInfoComponent() {
     return (

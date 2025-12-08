@@ -8,4 +8,4 @@ export default function ProfileCard ({currentUser}) {
 
 
     return <ProfileCardComponent currentUser/>
-};
+}

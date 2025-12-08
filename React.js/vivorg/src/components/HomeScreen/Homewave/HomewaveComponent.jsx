@@ -1,4 +1,3 @@
-import React from "react";
 import "./HomewaveComponent.scss";
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 

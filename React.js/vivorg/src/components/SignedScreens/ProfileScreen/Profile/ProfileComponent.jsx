@@ -1,13 +1,13 @@
-import React, { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import "./ProfileComponent.scss";
 import { getCurrentUser } from "../../../../api/FirestoreAPIs";
 import ProfileCard from "../ProfileCard/ProfileCard";
 
-export default function ProfileComponent({}) {
+export default function ProfileComponent() {
     const [currentUser , serCurrentUser] = useState ({});
-    useMemo (() => {
+    useEffect (() => {
         getCurrentUser(serCurrentUser);
-    })
+    }, [])
 
 
     return (

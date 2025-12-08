@@ -1,4 +1,3 @@
-import React from "react";
 import HomeNav from "../HomeScreen/HomeNav/HomeNav";
 import Home from "../HomeScreen/Home/Home";
 import Homewave from "../HomeScreen/Homewave/Homewave";

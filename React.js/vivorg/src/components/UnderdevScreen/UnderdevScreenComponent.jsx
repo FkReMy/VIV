@@ -1,4 +1,3 @@
-import React from "react";
 import vivw from '../../assets/Pics/vivw.png'
 import "./UnderdevScreenComponent.scss";
 import Image from 'react-bootstrap/Image'

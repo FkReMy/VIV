@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import LoginComponent from "./LoginComponent";
 import { useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
@@ -14,9 +14,9 @@ export default function Login() {
                 navigate('/feed');
             } else {
                 setLoading(false);
-            };
+            }
         })
-    }, []) 
+    }, [navigate]) 
     return  loading ? <Loader /> : <LoginComponent />;
 }
 

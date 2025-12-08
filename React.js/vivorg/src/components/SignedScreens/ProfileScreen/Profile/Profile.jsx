@@ -16,8 +16,8 @@ export default function Profile({currentUser}) {
                 navigate('/login');
             } else {
                 setLoading(false); 
-            };
+            }
         })
     }, [])
     return  loading ? <Loader /> :  <ProfileComponent currentUser={currentUser}/>;
-};
+}

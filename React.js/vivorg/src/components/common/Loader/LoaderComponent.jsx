@@ -1,4 +1,3 @@
-import React from "react";
 import "./LoaderComponent.scss";
 
 export default function LoaderComponent(){

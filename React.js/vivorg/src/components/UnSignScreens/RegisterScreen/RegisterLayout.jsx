@@ -1,4 +1,3 @@
-import React from "react";
 import Register from "./Register/Register";
 import UnSignScreensNav from "../UnSignScreensNav/UnSignScreensNav";
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
