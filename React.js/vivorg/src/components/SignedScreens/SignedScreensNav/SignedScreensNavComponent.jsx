@@ -10,7 +10,7 @@ import {
     AiOutlineMessage,
     AiOutlineSearch,
     AiOutlineBell
-} from 'react-icons/Ai';
+} from 'react-icons/ai';
 
 export default function SignedScreensNavComponent() {
     let navigate = useNavigate();

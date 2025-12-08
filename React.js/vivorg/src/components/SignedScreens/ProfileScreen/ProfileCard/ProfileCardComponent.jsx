@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { AiOutlineEdit } from 'react-icons/Ai';
+import { AiOutlineEdit } from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
 import { getStatus } from '../../../../api/FirestoreAPIs';
 import FeedPostsComponent from "../../FeedScreen/FeedPosts/FeedPostsComponent";

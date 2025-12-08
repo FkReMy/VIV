@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./UnSignScreensMenuComponent.scss"
-import { AiOutlineMenu } from 'react-icons/Ai';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 export default function UnSignScreensMenuComponent({ ...props }) {
     let navigate = useNavigate();

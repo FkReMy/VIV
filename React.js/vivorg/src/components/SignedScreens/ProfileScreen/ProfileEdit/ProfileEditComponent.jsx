@@ -6,9 +6,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { GiCancel } from 'react-icons/gi';
-import { AiOutlineSave } from 'react-icons/Ai';
+import { AiOutlineSave } from 'react-icons/ai';
 import { useNavigate } from "react-router-dom";
-import "./ProfileEditComponent.scss";
+import "./ProfileEditcomponent.scss";
 import { editProfile } from "../../../../api/FirestoreAPIs";
 
 export default function ProfileEditComponent({ currentUser }) {
