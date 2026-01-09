@@ -1,7 +1,7 @@
 // Importing necessary packages and dependencies
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:viv/components/Common/Colors/Colors.dart';
+import 'package:viv/components/common/colors/colors.dart';
 import 'package:viv/components/common/widgets/all/unsigned/c_button/c_button.dart';
 import 'package:viv/components/common/widgets/all/unsigned/c_square_tile/c_square_tile.dart';
 import 'package:viv/components/common/widgets/all/unsigned/c_text_field/c_text_field.dart';

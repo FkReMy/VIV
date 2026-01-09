@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:viv/components/Common/Colors/Colors.dart';
+import 'package:viv/components/common/colors/colors.dart';
 
 // UpperHome Widget
 class UpperHome extends StatefulWidget {
